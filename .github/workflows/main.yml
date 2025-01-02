@@ -46,12 +46,6 @@ jobs:
             ${{ runner.os }}-gradle-
             ${{ runner.os }}-gradle-default
 
-      - name: Setup Expo
-        uses: expo/expo-github-action@v8
-        with:
-          expo-version: latest
-          eas-version: latest
-
       - name: Prebuild app
         run: npx expo prebuild
 
